@@ -1,7 +1,7 @@
 #include "Warlock.hpp"
 
 Warlock::Warlock(std::string const &name, std::string const &title): name(name), title(title) {
-	std::cout << this->name << ": What a boring day\n";
+	std::cout << this->name << ": This looks like another boring day.\n";
 }
 
 Warlock::~Warlock() {
@@ -13,7 +13,7 @@ std::string const	&Warlock::getTitle(void) const { return (this->title); }
 void				Warlock::setTitle(std::string const &title) { this->title = title; }
 
 void				Warlock::introduce(void) const {
-	std:: cout << this->name << ": My name is " << this->name << ", " << this->title << "\n";
+	std:: cout << this->name << ": My name is " << this->name << ", " << this->title << "!\n";
 }
 
 void				Warlock::learnSpell(ASpell *spell) {
